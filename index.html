@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Le développement logiciel est un sport collectif</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <textarea id="source">
+    </textarea>
+
+    <script src="js/remark.min.js" type="text/javascript">
+    </script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+    var client = new XMLHttpRequest();
+    client.open('GET', 'index.md');
+    client.onload = function() {
+        document.getElementById('source').innerHTML = client.responseText;
+        var slideshow = remark.create();
+    }
+    client.send();
+});
+
+</script>
+  </body>
+</html>
