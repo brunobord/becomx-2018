@@ -18,6 +18,13 @@ h1 {
     background-color: #1f2939;
     color: #fff;
 }
+.remark-slide-content.nopadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.blackbg {
+    background-color: #161616;
+}
 li {
     line-height: 1.5;
 }
@@ -25,7 +32,9 @@ li {
 div.remark-slide-number {
     display: none;
 }
-
+.no-repeat {
+    background-repeat: no-repeat;
+}
 /** Quote styles */
 blockquote {
     font-family: 'Roboto Slab', serif;
